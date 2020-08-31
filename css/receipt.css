@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+.body {
+  background-color:#B7B7B7; 
+  font-family: poppins;
+	margin-top: 15px;
+}
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+page[size="A4"] {  
+  width: 21cm;
+  height: 24cm;
+}
+page[size="A4"]{
+  width: 26.7cm;
+  height: 24cm;
+}
+
+@media print {
+  .body, page {
+    margin: 0;
+    box-shadow: 0;
+  }
+}
+
+@media print {
+	#printButton {
+		display: none;
+	}
+}
+
